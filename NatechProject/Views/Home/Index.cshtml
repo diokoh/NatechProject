@@ -1,0 +1,9 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center homeContainer">
+    <p><a asp-controller="Salesmen" asp-action="Index">Salesmen Count: </a> <span>@Model.SalesmanCount</span></p>
+    <p><a asp-controller="Sales" asp-action="Index">Total Sales Amount </a>: <span>@Model.TotalSales €</span>  </p>
+</div>
